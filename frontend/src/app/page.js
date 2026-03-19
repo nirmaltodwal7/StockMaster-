@@ -7,6 +7,14 @@ export default function Home() {
   const { user, loading } = useAuth();
   const router = useRouter();
 
+  const API = process.env.NEXT_PUBLIC_API_URL;
+
+  useEffect(() => {
+    fetch(`${API}/`)
+      .then(res => res.text())
+      .then(data => console.log(data));
+  }, []);
+
   useEffect(() => {
     if (!loading) {
       if (user) {
