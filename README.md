@@ -21,11 +21,8 @@ A complete MERN stack (MongoDB, Express, React/Next.js, Node.js) web application
 ## Quick Start Setup
 
 ### Step 1: Start the Backend (API Server)
-1. Open a terminal and navigate to the backend folder:
-   ```bash
-   cd backend
-   ```
-2. Make sure you have MongoDB running locally, or edit `backend/scripts/seed.js` and `backend/config/db.js` with your MongoDB URI.
+1. Open a terminal in the root folder (where `server.js` is).
+2. Make sure you have MongoDB running locally, or edit `scripts/seed.js` and `config/db.js` with your MongoDB URI.
 3. Install dependencies:
    ```bash
    npm install
